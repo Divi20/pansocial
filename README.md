@@ -1,5 +1,6 @@
 [Link:]https://pansocial.web.app/
-
+Hosted on firebase
+steps to run
 <l1>1)To download file command on terminal:git clone https://github.com/Divi20/pansocial</li>
 <l1>2)To open pansocial from terminal : cd pansocial</li>
 <l1>3)To add all dependencies: npm install</l1>
