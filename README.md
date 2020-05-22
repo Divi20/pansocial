@@ -5,7 +5,7 @@
 <l1>3)To add all dependencies: npm install</l1>
 <l1>4)npm start</l1>
 
-<h1>Dependencies used:<h1>
+Dependencies used:
   <li> "axios": "^0.19.2"</li>
    <li> "bootstrap": "^4.0.0"<li>
   <li> "font-awesome": "^4.7.0"</li>
