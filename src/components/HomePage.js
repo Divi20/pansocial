@@ -30,15 +30,23 @@ const HomePage = ({ currentUser, posts, comments , todos ,recentActivity}) => {
     <div className="vertical-center" style={{width:"90%",padding:"5%",color:"white"}}>
 
        
-    <NavLink className="nav-link active"  to='/profile'><h1>Profile</h1></NavLink>
+    <NavLink className="nav-link active"  to='/home' activeStyle={{
+      color:'white'
+      }}><h1>Profile</h1></NavLink>
    
     <hr></hr>
-    <NavLink className="nav-link" to='/posts'><h1>Post</h1></NavLink>
+    <NavLink className="nav-link" to='/posts' activeStyle={{
+      color:'white'
+      }}><h1>Post</h1></NavLink>
     <hr></hr>
-    <NavLink className="nav-link"  to='/gallery'> <h1>Gallery</h1></NavLink>
+    <NavLink className="nav-link"  to='/gallery' activeStyle={{
+      color:'white'
+      }}> <h1>Gallery</h1></NavLink>
 
     <hr></hr>
-    <NavLink className="nav-link" to='/todo'> <h1>Todo</h1></NavLink>
+    <NavLink className="nav-link" to='/todo' activeStyle={{
+      color:'white'
+      }}> <h1>Todo</h1></NavLink>
        
   
     </div>
@@ -61,7 +69,7 @@ const HomePage = ({ currentUser, posts, comments , todos ,recentActivity}) => {
     <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
 
     <div>
-    <Route exact path="/profile" component={() => {return <ProfileDetailScreen currentUser={currentUser}/>}} />
+    <Route exact path="/home" component={() => {return <ProfileDetailScreen currentUser={currentUser}/>}} />
     <Route path="/posts" component={() => {return <PostDetailsScreen currentUser={currentUser} posts={posts} comments={comments} recentActivity={recentActivity}/>}}/>
     <Route path="/gallery" component={GalleryScreen} />
     <Route path="/todo" component={() => {return <TodoScreen currentUser={currentUser} todos={todos}/>}}/>
