@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardBody, CardTitle, CardHeader} from 'reactstrap';
+import {Card, CardBody, CardTitle, CardHeader, Label} from 'reactstrap';
 
 const Completed = ({currentUser , todoId, todoTitle }) =>{
   return(
@@ -53,6 +53,8 @@ const TodoScreen = ({ todos, currentUser }) => {
                 if(cutodo.completed !== true)
                 return <ToDo currentUser={currentUser} todoId={cutodo.userId} todoTitle={cutodo.title}></ToDo>
                 })}
+
+              <li> <input type="checkbox"/> <Label style={{textEmphasisColor:"lightGrey", fontSize:"large"}}> Type your task title</Label> </li>
             </ul>
         
           </CardBody>

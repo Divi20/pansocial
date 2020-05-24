@@ -12,76 +12,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
- 
+  font-size: calc(10px + 2vmin); 
 }
+
 .nav-link{
-  color: rgb(66, 64, 201);
+  color:white;
   
 }
+
 .chat{
   position:fixed;
+  margin-bottom: -0.1%;
   bottom:0;
   right:3%;
   padding:10px 20px 10px 20px;
   
-  width:300px;
+  width:320px;
   background-image: linear-gradient(to top,rgba(59, 57, 185, 0.829) 33%, rgba(71,80,237,1));
   text-align:center;
   color:white;
   border-radius:5px
-
-}
-
-.todocontainer{
-width: 100%;
-height: 100%;
 }
 
 .row{
-  /* width: 100%; */
+  background-color: white;
 }
 
 .App-link {
   color: white;
-}
-
-.accountscontainer{
-  width: 650px;
-  height: 650px;
-  position: absolute;
-  border-radius: 30px;
-  text-align: left; 
-  overflow-y: scroll;
-  
-}
-.list-group-item{
-  color: black;
-  font-size: medium;
-}
-
-.mainlistimage{
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.cardheading{
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-}
-
-.accountscard{
-  width:100%;
-  height:100%;
-  border-radius: 30px;
-}
-
-.todocardheader{
-  padding: 6%;
-  text-align: center;
 }
 
 .sidecontainer{
@@ -105,7 +63,8 @@ padding:10%;
 
 .maincontainer{
   padding-top:5%;
-  justify-content:right;
+  justify-content:left;
+  margin-left: -2%;
 }
 .border-right {
   border-right: 1px solid black;
@@ -133,6 +92,150 @@ padding:10%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
 
+/* Landing page items  */
 
+.mainlistimage{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardheading{
+  color: #333333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px;
+}
+
+.accountscard{
+  width:100%;
+  height:100%;
+  border-radius: 30px;
+}
+
+.accountscontainer{
+  width: 670px;
+  height: 620px;
+  position: absolute;
+  border-radius: 30px;
+  text-align: left; 
+  vertical-align: middle;
+}
+
+.accountscardheader{
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+.mainListContainer{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 660px;
+}
+
+.accountscard{
+  border-radius: 30px;  
+}
+
+.list-groupmb-5{
+  border-radius: 30px;
+  overflow-y: scroll;
+  height: 480px;
+  width: 665px;
+  margin-left: -15px;
+  margin-top: -14px;
+}
+
+.list-group-item{
+  border-left: hidden;
+  border-right: hidden;
+  border-bottom: black;
+  height: 60px;
+  color: black;
+  font-size: large;
+  padding: 10px;
+}
+
+/* Profile Page Items */
+
+.profilepicture{
+  object-fit: cover;
+}
+
+/* ToDo Items */
+
+.todocontainer{
+  width: 100%;
+  height: 100%;
+}
+
+.todocard{
+  border-radius: 30px;
+}
+
+.completedcard{
+  border-radius: 30px;
+}
+
+.todocardheader{
+  padding: 3%;
+  text-align: center;
+}
+
+.todoList{
+  font-size: x-large;
+  text-align: left;
+}
+
+.completedlist{
+  font-size: x-large;
+  text-align: left;
+}
+
+.containerd {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  padding: 0;
+  width: 50px;
+  border: 0;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  font-size: 40px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+uld {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+lid {
+  padding: 8px 12px;
+}
+
+lid:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
 }

@@ -117,7 +117,7 @@ console.log("todos ",todos)
           <Route
             exact
             path="/home"
-            component={({ match }) => <HomePage  currentUser={currentUser} posts={posts} comments={comments} recentActivity={recentActivity} todos={todos}/>}
+            component={({ match }) => <HomePage  currentUser={currentUser} posts={posts} comments={comments} recentActivity={recentActivity} todos={todos} photos={photos} albums={albums}/>}
           />
 
           
