@@ -1,7 +1,7 @@
 import React from 'react';
-import  Dropdown from './Dropdown';
 
-const UpperBar = ({menu, username, imgurl}) => {
+
+const UpperBar = ({username, imgurl}) => {
 
     return(
       

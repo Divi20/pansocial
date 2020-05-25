@@ -123,9 +123,9 @@ const PostDetailsScreen = ({ currentUser, posts, comments, recentActivity }) => 
         ))}
       </div>
      
-      <div className="col-sm-3 col-md-6 col-lg-4"> 
+      <div className="col-sm-3 col-md-6 col-lg-5"> 
         {currentUser.map(cuser => (
-          <Card style={{padding:"7%", borderRadius:"30px" , marginTop:"20px"}}>
+          <Card style={{padding:"5%", borderRadius:"30px" , marginTop:"20px"}}>
             <h1>Recent Activity</h1>
               <RecentActivity userId={cuser.id} username={cuser.name} pic ={cuser.profilepicture} recentActivity={recentActivity}></RecentActivity>
           </Card>

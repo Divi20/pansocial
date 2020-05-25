@@ -33,7 +33,7 @@ const TodoScreen = ({ todos, currentUser }) => {
   return (
     <div className="row">
 
-    <div className="col-lg-7">
+    <div className="col-lg-6">
         
         <Card className="todocard text-dark">
           
