@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card ,CardBody, CardImg,CardText,CardFooter} from 'reactstrap';
-import {Link} from 'react-router-dom'
+import UpperBar from './UpperBar'
 
 
 
@@ -62,6 +62,14 @@ const userId = currentUser.map(user =>(user.id));
 var uphotos = photos.filter((photo) => photo.userId == userId );
   return (
     <div className="App">
+    {currentUser.map((cuser)=>{
+      return <UpperBar username={cuser.name} imgurl={cuser.profilepicture} email={cuser.email} headername="GalleryScreen"/>
+    })}
+
+  <br></br>
+  <br></br>
+  
+  <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
     <div className="container-fluid">
     <div className="row">
     <AlbumList uphotos={uphotos} albums={albums}></AlbumList>

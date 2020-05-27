@@ -1,9 +1,19 @@
 import React from 'react';
 import { CardImg,Card, CardTitle,CardText } from 'reactstrap';
+import UpperBar from './UpperBar'
 
 const ProfileDetailScreen = ({ currentUser}) => {
   return (
     <div className="row">
+
+    {currentUser.map((cuser)=>{
+      return <UpperBar username={cuser.name} imgurl={cuser.profilepicture} email={cuser.email} headername="Profile"/>
+    })}
+
+  <br></br>
+  <br></br>
+  
+  <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
       <div className="col-sm-3 col-md-6 col-lg-4 border-right"> 
         
         {currentUser.map(cuser => (

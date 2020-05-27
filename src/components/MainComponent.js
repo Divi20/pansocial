@@ -119,8 +119,6 @@ console.log("todos ",todos)
             path="/home"
             component={({ match }) => <HomePage  currentUser={currentUser} posts={posts} comments={comments} recentActivity={recentActivity} todos={todos} photos={photos} albums={albums}/>}
           />
-
-          
           <Redirect to="/" />
         </Switch>
       </div>

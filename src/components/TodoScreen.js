@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, CardBody, CardTitle, CardHeader, Label} from 'reactstrap';
+import UpperBar from './UpperBar'
 
 const Completed = ({currentUser , todoId, todoTitle }) =>{
   return(
@@ -32,6 +33,14 @@ const ToDo = ({currentUser , todoId, todoTitle }) =>{
 const TodoScreen = ({ todos, currentUser }) => {
   return (
     <div className="row">
+    {currentUser.map((cuser)=>{
+      return <UpperBar username={cuser.name} imgurl={cuser.profilepicture} email={cuser.email} headername="Todo"/>
+    })}
+
+  <br></br>
+  <br></br>
+  
+  <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
 
     <div className="col-lg-6">
         

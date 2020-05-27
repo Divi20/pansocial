@@ -54,25 +54,11 @@ const HomePage = ({ currentUser, posts, comments , todos ,recentActivity, photos
           </div>
         </div>
       
-      <div className="col-sm-3 col-md-6 col-lg-9 maincontainer"> 
-    
-        {currentUser.map((cuser)=>{
-          return <UpperBar username={cuser.name} imgurl={cuser.profilepicture}/>
-        })}
-
-      <br></br>
-      <br></br>
-      
-      <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
-
-    <div>
+      <div className="col-sm-3 col-md-6 col-lg-9 maincontainer">  
     <Route exact path="/home" component={() => {return <ProfileDetailScreen currentUser={currentUser}/>}} />
     <Route path="/posts" component={() => {return <PostDetailsScreen currentUser={currentUser} posts={posts} comments={comments} recentActivity={recentActivity}/>}}/>
     <Route path="/gallery" component={() => {return <GalleryScreen currentUser = {currentUser} albums={albums} photos={photos}></GalleryScreen>}} />
     <Route path="/todo" component={() => {return <TodoScreen currentUser={currentUser} todos={todos}/>}}/>
-   
-
-    </div>
   
     </div>
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardImg,Card,CardText } from 'reactstrap';
+import UpperBar from './UpperBar'
 
 
 const Post = ({userId , posts,comments, username, pic, useremail }) =>{
@@ -115,6 +116,14 @@ const PostDetailsScreen = ({ currentUser, posts, comments, recentActivity }) => 
     return (
       
      <div className="row">
+     {currentUser.map((cuser)=>{
+      return <UpperBar username={cuser.name} imgurl={cuser.profilepicture} email={cuser.email} headername="Posts"/>
+    })}
+
+  <br></br>
+  <br></br>
+  
+  <hr style={{paddingLeft:"5%",paddingRight:"5%"}}></hr>
       <div className="col-sm-3 col-md-6 col-lg-7"> 
         {currentUser.map(cuser => (
           <div style={{textAlign:"justify", marginTop:"20px"}}>
